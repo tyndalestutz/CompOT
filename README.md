@@ -12,14 +12,16 @@ This project uses a set-theoretic framework to formalize Computational Optimalit
 ### Sets
 
 - **$\textbf{Can}$:** The infinite set of all possible candidates.
-  ```math
-  \textbf{Can} = \{ c_1, c_2, c_3, \dots \}
-  ```
+  
+  $$\textbf{Can} = \{ c_1, c_2, c_3, \dots \}$$
+
 - **$\textbf{Con}$:** The finite set of all constraints, hierarchically ranked.
-  ```math
-  \textbf{Con} = \{ k_1, k_2, \dots, k_m \} \quad \text{with } k_1 \succ k_2 \succ \dots \succ k_m
-  ```
-- **$\textbf{C}$:** The finite set of chosen candidates used in evaluation. $\textbf{C} \subset \textbf{Can}$.
+  
+  $$\textbf{Con} = \{ k_1, k_2, \dots, k_m \} \quad \text{with } k_1 \succ k_2 \succ \dots \succ k_m$$
+
+- **$\textbf{C}$:** The finite set of chosen candidates used in evaluation. 
+
+  $$\textbf{C} \subset \textbf{Can}$$
 
 ---
 
