@@ -12,7 +12,7 @@ This project uses a set-theoretic framework to formalize Computational Optimalit
 
 - **$\textbf{Can}$:** The infinite set of all possible candidates.
   
-  $$\textbf{Can} = \{ c_1, c_2, c_3, \dots \}$$
+  $$\textbf{Can} = \{{ c_1, c_2, c_3, \dots \}}$$
 
 - **$\textbf{Con}$:** The finite set of all constraints, hierarchically ranked.
   
@@ -28,11 +28,9 @@ This project uses a set-theoretic framework to formalize Computational Optimalit
 1. **Evaluation Function** $E$:
    The evaluation function maps each pair of constraint $k_i \in \textbf{Con}$ and candidate $c \in \textbf{Can}$ to a binary value indicating satisfaction ($0$) or violation ($1$).
 
-   $$E: \textbf{Con} \times \textbf{Can} \rightarrow \{0, 1\}$$
+   $$E: \textbf{Con} \times \textbf{Can} \rightarrow \{{0, 1\}}$$
 
-   $$E(k_i, c) =
-   \begin{cases}
-   1 & \text{if } c \text{ violates } k_i, \\
+   $$E(k_i, c) = \begin{cases} 1 & \text{if } c \text{ violates } k_i, \\
    0 & \text{if } c \text{ satisfies } k_i.
    \end{cases}$$
 
