@@ -1,0 +1,33 @@
+CompOT/
+├── src/
+│   ├── main.py                  # Entry point of the program
+│   ├── ipa_utils.py             # Handles IPA input/output
+│   ├── eval.py                  # Evaluation functions and violation profiles
+│   ├── constraints.py           # Constraint library
+│   ├── candgen.py               # Candidate generation
+│   ├── level_sets.py            # First violation and level sets
+│   ├── utils.py                 # Generic utility functions (e.g., logging)
+├── tests/
+│   ├── test_ipa_utils.py        # Unit tests for IPA utilities
+│   ├── test_eval.py             # Unit tests for evaluation functions
+│   ├── test_constraints.py      # Unit tests for constraints
+│   ├── test_candgen.py          # Unit tests for candidate generation
+│   ├── test_level_sets.py       # Unit tests for level sets
+├── data/
+│   ├── dictionary.json          # Example input/output IPA strings
+│   ├── constraints_metadata.json # Metadata for constraints (e.g., names, descriptions)
+├── docs/
+│   ├── README.md                # Project description and setup instructions
+│   ├── CONTRIBUTING.md          # Guide for contributors
+│   ├── API_REFERENCE.md         # Documentation for modules and functions
+│   ├── DESIGN_NOTES.md          # Detailed explanation of project design
+├── examples/
+│   ├── example_input.json       # Sample input for testing
+│   ├── example_output.json      # Sample output for expected results
+├── .github/
+│   ├── workflows/
+│   │   ├── ci.yml               # Continuous integration configuration (e.g., GitHub Actions)
+├── LICENSE                      # Licensing information
+├── requirements.txt             # Python dependencies
+├── setup.py                     # For installing the project as a Python package
+└── .gitignore                   # Files and directories to ignore in Git
