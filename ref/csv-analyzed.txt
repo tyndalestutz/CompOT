@@ -1,0 +1,118 @@
+<class 'pandas.core.frame.DataFrame'>
+Index: 141 entries, ɒ to h
+Data columns (total 28 columns):
+ #   Column           Non-Null Count  Dtype 
+---  ------           --------------  ----- 
+ 0   syllabic         141 non-null    object
+ 1   stress           141 non-null    object
+ 2   long             141 non-null    object
+ 3   consonantal      141 non-null    object
+ 4   sonorant         141 non-null    object
+ 5   continuant       141 non-null    object
+ 6   delayed release  141 non-null    object
+ 7   approximant      141 non-null    object
+ 8   tap              141 non-null    object
+ 9   trill            141 non-null    object
+ 10  nasal            141 non-null    object
+ 11  voice            141 non-null    object
+ 12  spread gl        141 non-null    object
+ 13  constr gl        141 non-null    object
+ 14  LABIAL           141 non-null    object
+ 15  round            141 non-null    object
+ 16  labiodental      141 non-null    object
+ 17  CORONAL          141 non-null    object
+ 18  anterior         141 non-null    object
+ 19  distributed      141 non-null    object
+ 20  strident         141 non-null    object
+ 21  lateral          141 non-null    object
+ 22  DORSAL           141 non-null    object
+ 23  high             141 non-null    object
+ 24  low              141 non-null    object
+ 25  front            141 non-null    object
+ 26  back             141 non-null    object
+ 27  tense            141 non-null    object
+dtypes: object(28)
+memory usage: 31.9+ KB
+Result
+(None,
+   syllabic stress long consonantal sonorant continuant delayed release  \
+ ɒ        +      -    -           -        +          +               0   
+ ɑ        +      -    -           -        +          +               0   
+ ɶ        +      -    -           -        +          +               0   
+ a        +      -    -           -        +          +               0   
+ æ        +      -    -           -        +          +               0   
+ 
+   approximant tap trill  ... anterior distributed strident lateral DORSAL  \
+ ɒ           +   -     -  ...        0           0        0       -      +   
+ ɑ           +   -     -  ...        0           0        0       -      +   
+ ɶ           +   -     -  ...        0           0        0       -      +   
+ a           +   -     -  ...        0           0        0       -      +   
+ æ           +   -     -  ...        0           0        0       -      +   
+ 
+   high low front back tense  
+ ɒ    -   +     -    +     0  
+ ɑ    -   +     -    +     0  
+ ɶ    -   +     +    -     0  
+ a    -   +     -    -     0  
+ æ    -   +     +    -     0  
+ 
+ [5 rows x 28 columns],
+ syllabic           0
+ stress             0
+ long               0
+ consonantal        0
+ sonorant           0
+ continuant         0
+ delayed release    0
+ approximant        0
+ tap                0
+ trill              0
+ nasal              0
+ voice              0
+ spread gl          0
+ constr gl          0
+ LABIAL             0
+ round              0
+ labiodental        0
+ CORONAL            0
+ anterior           0
+ distributed        0
+ strident           0
+ lateral            0
+ DORSAL             0
+ high               0
+ low                0
+ front              0
+ back               0
+ tense              0
+ dtype: int64,
+ 0,
+ syllabic           141
+ stress             141
+ long               141
+ consonantal        141
+ sonorant           141
+ continuant         141
+ delayed release    141
+ approximant        141
+ tap                141
+ trill              141
+ nasal              141
+ voice              141
+ spread gl          141
+ constr gl          141
+ LABIAL             141
+ round              141
+ labiodental        141
+ CORONAL            141
+ anterior           141
+ distributed        141
+ strident           141
+ lateral            141
+ DORSAL             141
+ high               141
+ low                141
+ front              141
+ back               141
+ tense              141
+ dtype: int64)
