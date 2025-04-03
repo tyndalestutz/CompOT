@@ -1,6 +1,0 @@
-PLAIN,PR,APR
-cats,/ˈkæts/
-dogs,/ˈdɑɡz/,/ˈdɔɡz/
-fishes,/ˈfɪʃəz/,/ˈfɪʃɪz/
-busses,/ˈbəsəz/
-flies,/ˈfɫaɪz/

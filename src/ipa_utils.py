@@ -69,7 +69,8 @@ class DistinctiveFeaturesLoader:
         if features:
             return getattr(features, feature_name)
         return None
-    
+
+    '''
     def get_single_feature_two_symbols(self, ipa_symbol1, ipa_symbol2, feature_name):
         """Retrieves the value of a single feature for two given IPA symbols."""
         features1 = self.get_features(ipa_symbol1)
@@ -77,11 +78,55 @@ class DistinctiveFeaturesLoader:
         if features1 and features2:
             return getattr(features1, feature_name), getattr(features2, feature_name)
         return None, None
+    '''
+
+    def get_single_feature_string(self, feature_name, ipa_string):
+        """Retrieves the value of a single feature for each character in the given IPA string."""
+        feature_values = []
+        for char in ipa_string:
+            feature_value = self.get_single_feature(char, feature_name)
+            feature_values.append((char, feature_value))
+        return feature_values
+
 
 # Create an instance of the loader
 loader = DistinctiveFeaturesLoader()
 
 # Test the loader
-print(loader.get_features('t'))
-print(loader.get_single_feature('t', 'voice'))
-print(loader.get_single_feature_two_symbols('t', 'd', 'voice'))
+# print(loader.get_features('t'))
+# print(loader.get_single_feature('t', 'voice'))
+# print(loader.get_single_feature_two_symbols('t', 'd', 'voice'))
+
+class IPACharacterExtractor:
+    def __init__(self, ipa_string):
+        self.ipa_string = ipa_string.strip('/')
+
+    def get_last_character(self):
+        """Returns the last character of the IPA string before the closing '/'."""
+        return self.ipa_string[-1] if self.ipa_string else None
+
+    def get_last_two_characters(self):
+        """Returns the last two characters of the IPA string before the closing '/'."""
+        return self.ipa_string[-2:] if len(self.ipa_string) >= 2 else None
+
+    def get_second_to_last_character(self):
+        """Returns the second to last character of the IPA string before the closing '/'."""
+        return self.ipa_string[-2] if len(self.ipa_string) >= 2 else None
+
+    def get_first_character(self):
+        """Returns the first character of the IPA string after the opening '/'."""
+        return self.ipa_string[0] if self.ipa_string else None
+
+# Example usage
+ipa_input = "/ˈfɫaɪz/"
+extractor = IPACharacterExtractor(ipa_input)
+
+# Extract characters
+last_char = extractor.get_last_character()
+last_two_chars = extractor.get_last_two_characters()
+second_to_last_char = extractor.get_second_to_last_character()
+
+# Use the distinctive features loader with extracted characters
+# print(loader.get_features(last_char))
+# print(loader.get_features(last_two_chars))
+# print(loader.get_features(second_to_last_char))
